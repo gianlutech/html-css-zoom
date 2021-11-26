@@ -1,8 +1,66 @@
+/* GENERICS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* UTILS */
 body{
-    font-family: "";
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+main{
+    background-color: black;
+    height: calc(100vh - 80px);
+    position: relative;
+}
+footer{
+    background-color: #222222;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* BUTTOMS */
+.btn{
+    background-color: grey;
+    position: absolute;
+    border-radius: 5px;
+}
+.btn.btn-small{
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+}
+.btn.btn-large{
+    top: 10px;
+    right: 45px;
+    padding: 5px 10px;
+}
+
+/* COMMAND BAR */
+.footer-flex{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item-col a{
+    flex-direction: column;
+    justify-content: center;
+}
+.flex-item-col.w-25{
+    width: 25%;
+}
+.flex-item-col.w-40{
+    width: 40%;
 }
