@@ -18,17 +18,27 @@ body{
     font-family: 'Lato', sans-serif;
     color: white;
 }
+header{
+    height: 80px;
+    background-color: black;
+
+}
 main{
     background-color: black;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 160px);
     position: relative;
+    overflow: auto;
 }
 footer{
     background-color: #222222;
+    height: 80px;
 }
 a{
     text-decoration: none;
     color: white;
+}
+#logo{
+    font-size: 1.8em;
 }
 
 /* BUTTOMS */
@@ -48,18 +58,47 @@ a{
     padding: 5px 10px;
 }
 
+/* CARD */
+.card{
+    display: inline-block;
+    margin:15px 5px;
+    position: relative;
+}
+.mute{
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    background-color: rgba(256, 256, 256, 0.5);
+    color:white;
+    padding: 5px 10px;
+}
+.mute:hover{
+    cursor: pointer;
+    color: red;
+}
+
+
+
 /* COMMAND BAR */
 .footer-flex{
-    height: 80px;
+   /*  height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; */
+}
+.flex-item-col{
+    display: flex;
+    flex-wrap: wrap;
 }
 .flex-item-col a{
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+
 }
 .flex-item-col.w-25{
     width: 25%;
+    padding: 0 10px;
+    flex-direction: row;
 }
 .flex-item-col.w-40{
     width: 40%;
