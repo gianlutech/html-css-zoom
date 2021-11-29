@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 .clearfix::after{
@@ -64,6 +64,11 @@ a{
     margin:15px 5px;
     position: relative;
 }
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s linear;
+    cursor: pointer;
+}
 .mute{
     position: absolute;
     bottom: 3px;
@@ -74,16 +79,16 @@ a{
 }
 .mute:hover{
     cursor: pointer;
-    color: red;
+    color: darkred;
 }
 
 
 
 /* COMMAND BAR */
 .footer-flex{
-   /*  height: 80px;
+    height: 80px;
     display: flex;
-    justify-content: space-between; */
+    justify-content: space-between; 
 }
 .flex-item-col{
     display: flex;
